@@ -1,7 +1,7 @@
 module.exports = [
   {
     'should': 'Should rename "left", "Left", "LEFT" (autoRename:true). ',
-    'expected': 'div.right, div.Right, div.RIGHT, div.respectLeft { width:10px;}',
+    'expected': 'div.right, div.Right, div.RIGHT, div.respectRight { width:10px;}',
     'input': 'div.left, div.Left, div.LEFT, div.respectLeft { width:10px;}',
     'reversable': true,
     'options': { 'autoRename': true }
@@ -25,7 +25,7 @@ module.exports = [
   },
   {
     'should': 'Should rename "ltr", "Ltr", "LTR" (autoRename:true, greedy). ',
-    'expected': 'div.rtl, div.Rtl, div.RTL, div.Urtla { width:10px;}',
+    'expected': 'div.rtl, div.Rtl, div.RTL, div.Ultra { width:10px;}',
     'input': 'div.ltr, div.Ltr, div.LTR, div.Ultra { width:10px;}',
     'reversable': true,
     'options': {
